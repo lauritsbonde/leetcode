@@ -1,0 +1,13 @@
+{
+  "slug": "palindrome-number",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "6.3 MB",
+      "memory_pct": 26.7,
+      "submission_id": 2034429421,
+      "date": "2026-06-15"
+    }
+  }
+}

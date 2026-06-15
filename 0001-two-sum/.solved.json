@@ -1,0 +1,13 @@
+{
+  "slug": "two-sum",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "5.9 MB",
+      "memory_pct": 30.8,
+      "submission_id": 2034426292,
+      "date": "2026-06-15"
+    }
+  }
+}
