@@ -3,7 +3,7 @@
 My LeetCode solutions, one directory per problem. Each problem is scaffolded by `fetch.py`.
 Root is a single Go module (`go.mod`); every problem dir is its own `package main`.
 
-📊 **[Progress page](https://USERNAME.github.io/REPO/)** — auto-updated table of every solved problem (counts, languages, topics). Built by CI on each push to `main` and published to the `gh-pages` branch; `main` stays commit-clean. Replace `USERNAME`/`REPO` once the repo exists.
+📊 **[Progress page](https://lauritsbonde.github.io/leetcode/)** — auto-updated table of every solved problem (counts, languages, topics). Built by CI on each push to `main` and published to the `gh-pages` branch; `main` stays commit-clean.
 
 ## Scaffold a problem
 
@@ -104,17 +104,3 @@ leetcode/
 ```
 
 Dirs are named `<4-digit-id>-<slug>` so they sort by problem number.
-
-## Progress
-
-<!-- STATS:START -->
-
-**Solved: 1** &nbsp; | &nbsp; 🟢 Easy 1 &nbsp; · &nbsp; 🟡 Medium 0 &nbsp; · &nbsp; 🔴 Hard 0
-
-| # | Problem | Difficulty | Languages | Runtime | Topics |
-|---|---------|------------|-----------|---------|--------|
-| 1 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | Go | 0 ms | Array, Hash Table |
-
-_1 more scaffolded but not yet Accepted._
-
-<!-- STATS:END -->
