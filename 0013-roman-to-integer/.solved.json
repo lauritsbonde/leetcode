@@ -1,0 +1,13 @@
+{
+  "slug": "roman-to-integer",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "4.7 MB",
+      "memory_pct": 38.3,
+      "submission_id": 2035579708,
+      "date": "2026-06-16"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "longest-common-prefix",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "4.5 MB",
+      "memory_pct": 8.3,
+      "submission_id": 2035614058,
+      "date": "2026-06-16"
+    }
+  }
+}
