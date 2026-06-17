@@ -331,8 +331,8 @@ def main():
     title = q["title"]
     diff = q["difficulty"]
     dirname = f"{int(qid):04d}-{q['titleSlug']}"
-    out = HERE / dirname
-    out.mkdir(exist_ok=True)
+    out = HERE / "problems" / dirname
+    out.mkdir(parents=True, exist_ok=True)
 
     tags = ", ".join(t["name"] for t in q["topicTags"]) or "—"
     body = html_to_md(q["content"])

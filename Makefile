@@ -14,19 +14,19 @@ new:
 	python3 fetch.py $(p) $(l)
 
 run:
-	go run ./$(d)
+	go run ./problems/$(d)
 
 test:
-	go test ./$(d)
+	go test ./problems/$(d)
 
 py:
-	python3 ./$(d)/solution.py
+	python3 ./problems/$(d)/solution.py
 
 fmt:
-	gofmt -w ./$(d)
+	gofmt -w ./problems/$(d)
 
 vet:
-	go vet ./$(d)
+	go vet ./problems/$(d)
 
 submit:
 	python3 submit.py $(d) $(l)

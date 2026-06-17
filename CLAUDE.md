@@ -33,7 +33,7 @@ not the answer.
 
 ## Repo layout & workflow
 
-Each problem lives in `NNNN-slug/` with `README.md`, `solution.go`,
+Each problem lives in `problems/NNNN-slug/` with `README.md`, `solution.go`,
 `testcases.txt`. Solve **only** inside the `LC-START` / `LC-END` markers in
 `solution.go` — that region is what gets submitted.
 
@@ -52,4 +52,5 @@ make stats                  # regenerate progress table in README.md
   `.solved.json`.
 - Local pass ≠ Accepted — only example cases are wired, not the full judge set.
 
-Language: Go primarily. Module is `go.mod`; one `package main` per problem dir.
+Language: Go primarily. Module is `go.mod` at repo root; problem dirs live under
+`problems/`, one `package main` each.

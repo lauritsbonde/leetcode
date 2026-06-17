@@ -21,7 +21,7 @@ python3 fetch.py 1                                    # by id (slower, paginates
 python3 fetch.py two-sum py                           # override language
 ```
 
-Creates `0001-two-sum/` with:
+Creates `problems/0001-two-sum/` with:
 
 | File             | What                                            |
 |------------------|-------------------------------------------------|
@@ -38,9 +38,9 @@ Default `go`. Override with 2nd arg: `go`, `py`/`python`/`python3`, `cpp`, `java
 ## Run
 
 ```sh
-make run d=0001-two-sum     # go run ./0001-two-sum
-make test d=0001-two-sum    # go test ./0001-two-sum
-make py d=0001-two-sum      # python3 ./0001-two-sum/solution.py
+make run d=0001-two-sum     # go run ./problems/0001-two-sum
+make test d=0001-two-sum    # go test ./problems/0001-two-sum
+make py d=0001-two-sum      # python3 ./problems/0001-two-sum/solution.py
 make fmt d=0001-two-sum     # gofmt -w
 make vet d=0001-two-sum     # go vet
 ```
@@ -97,10 +97,33 @@ leetcode/
 ├── fetch.py            # scaffold a problem
 ├── submit.py           # submit a solution
 ├── .lc-cookies.json    # auth (gitignored)
-└── 0001-two-sum/
-    ├── README.md
-    ├── solution.go
-    └── testcases.txt
+└── problems/
+    └── 0001-two-sum/
+        ├── README.md
+        ├── solution.go
+        └── testcases.txt
 ```
 
-Dirs are named `<4-digit-id>-<slug>` so they sort by problem number.
+Problem dirs live under `problems/`, named `<4-digit-id>-<slug>` so they sort by problem number.
+
+## Progress
+
+<!-- STATS:START -->
+
+**Solved: 11** &nbsp; | &nbsp; 🟢 Easy 4 &nbsp; · &nbsp; 🟡 Medium 6 &nbsp; · &nbsp; 🔴 Hard 1
+
+| # | Problem | Difficulty | Languages | Runtime | Topics |
+|---|---------|------------|-----------|---------|--------|
+| 1 | [1. Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | Go | 0 ms | Array, Hash Table |
+| 2 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | Go | 0 ms | Linked List, Math, Recursion |
+| 3 | [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | Go | 0 ms | Hash Table, String, Sliding Window |
+| 4 | [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | 🔴 Hard | Go | 0 ms | Array, Binary Search, Divide and Conquer |
+| 5 | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 🟡 Medium | Go | 3 ms | Two Pointers, String, Dynamic Programming |
+| 6 | [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 🟡 Medium | Go | 10 ms | String |
+| 7 | [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 🟡 Medium | Go | 6 ms | Math |
+| 8 | [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 🟡 Medium | Go | 0 ms | String |
+| 9 | [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 🟢 Easy | Go | 0 ms | Math |
+| 13 | [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | Go | 0 ms | Hash Table, Math, String |
+| 14 | [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 🟢 Easy | Go | 0 ms | Array, String, Trie |
+
+<!-- STATS:END -->

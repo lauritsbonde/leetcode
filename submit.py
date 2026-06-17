@@ -172,7 +172,7 @@ def record_solved(dirpath, lang, sid, r):
 def main():
     if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
         sys.exit(__doc__)
-    dirpath = (HERE / sys.argv[1]).resolve()
+    dirpath = (HERE / "problems" / sys.argv[1]).resolve()
     if not dirpath.is_dir():
         sys.exit(f"Not a directory: {dirpath}")
     want_ext = sys.argv[2].lstrip(".") if len(sys.argv) > 2 else None

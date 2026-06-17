@@ -17,6 +17,7 @@ import re
 import sys
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+PROBLEMS = os.path.join(ROOT, "problems")
 README = os.path.join(ROOT, "README.md")
 START = "<!-- STATS:START -->"
 END = "<!-- STATS:END -->"
@@ -44,7 +45,7 @@ def parse_problem(dirname):
     if not m:
         return None
     pid, slug = int(m.group(1)), m.group(2)
-    path = os.path.join(ROOT, dirname)
+    path = os.path.join(PROBLEMS, dirname)
     readme = os.path.join(path, "README.md")
 
     title = slug.replace("-", " ").title()
@@ -141,8 +142,8 @@ def build_page(problems):
 
 def main():
     problems = [
-        p for d in os.listdir(ROOT)
-        if os.path.isdir(os.path.join(ROOT, d))
+        p for d in os.listdir(PROBLEMS)
+        if os.path.isdir(os.path.join(PROBLEMS, d))
         for p in [parse_problem(d)]
         if p
     ]
