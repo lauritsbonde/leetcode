@@ -1,0 +1,13 @@
+{
+  "slug": "longest-palindromic-substring",
+  "solutions": {
+    "golang": {
+      "runtime": "3 ms",
+      "runtime_pct": 53.8,
+      "memory": "4.4 MB",
+      "memory_pct": 50.6,
+      "submission_id": 2036828508,
+      "date": "2026-06-17"
+    }
+  }
+}

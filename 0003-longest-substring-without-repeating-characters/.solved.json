@@ -1,0 +1,13 @@
+{
+  "slug": "longest-substring-without-repeating-characters",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "5.1 MB",
+      "memory_pct": 27.0,
+      "submission_id": 2036827283,
+      "date": "2026-06-17"
+    }
+  }
+}

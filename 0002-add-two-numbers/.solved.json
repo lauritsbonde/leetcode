@@ -1,12 +1,12 @@
 {
-  "slug": "longest-common-prefix",
+  "slug": "add-two-numbers",
   "solutions": {
     "golang": {
       "runtime": "0 ms",
       "runtime_pct": 100,
-      "memory": "4.3 MB",
-      "memory_pct": 20.2,
-      "submission_id": 2036825200,
+      "memory": "6.2 MB",
+      "memory_pct": 83.1,
+      "submission_id": 2036826568,
       "date": "2026-06-17"
     }
   }

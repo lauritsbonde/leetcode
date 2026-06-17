@@ -1,0 +1,13 @@
+{
+  "slug": "reverse-integer",
+  "solutions": {
+    "golang": {
+      "runtime": "6 ms",
+      "runtime_pct": 8.4,
+      "memory": "4 MB",
+      "memory_pct": 14.9,
+      "submission_id": 2036830535,
+      "date": "2026-06-17"
+    }
+  }
+}

@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // 14. Longest Common Prefix  (https://leetcode.com/problems/longest-common-prefix/)
 // write your solution between the markers below (submit.py sends this)
@@ -80,13 +82,26 @@ func (t *Trie) LongestCommonPrefix(words int) string {
 }
 
 func longestCommonPrefix(strs []string) string {
-	trie := NewTrie()
+	return verticalScreening(strs)
+	// trie := NewTrie()
 
-	for _, word := range strs {
-		trie.InsertWord(word)
+	// for _, word := range strs {
+	// 	trie.InsertWord(word)
+	// }
+
+	// return trie.LongestCommonPrefix(len(strs))
+}
+
+func verticalScreening(strs []string) string {
+	for i := range strs[0] {
+		for _, str := range strs {
+			if i >= len(str) || str[i] != strs[0][i] {
+				return strs[0][:i]
+			}
+		}
 	}
 
-	return trie.LongestCommonPrefix(len(strs))
+	return strs[0]
 }
 
 // LC-END
@@ -100,6 +115,7 @@ func main() {
 		{[]string{"dog", "racecar", "car"}, ""},
 		{[]string{"", "b"}, ""},
 		{[]string{"ab", "a"}, "a"},
+		{[]string{"a"}, "a"},
 	}
 
 	for i, c := range cases {

@@ -1,0 +1,13 @@
+{
+  "slug": "median-of-two-sorted-arrays",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "7 MB",
+      "memory_pct": 28.1,
+      "submission_id": 2036827761,
+      "date": "2026-06-17"
+    }
+  }
+}
