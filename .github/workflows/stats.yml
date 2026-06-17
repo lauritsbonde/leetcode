@@ -36,5 +36,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./site
+          # Keep Jekyll on so the Cayman theme renders index.md -> index.html.
+          # Without this peaceiris drops a .nojekyll file, files serve raw, root 404s.
+          enable_jekyll: true
           # Orphan branch, force-pushed each run — keeps no history noise.
           force_orphan: true
