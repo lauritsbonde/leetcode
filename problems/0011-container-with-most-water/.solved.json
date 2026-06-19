@@ -1,0 +1,13 @@
+{
+  "slug": "container-with-most-water",
+  "solutions": {
+    "golang": {
+      "runtime": "0 ms",
+      "runtime_pct": 100,
+      "memory": "10.5 MB",
+      "memory_pct": 17.4,
+      "submission_id": 2038021117,
+      "date": "2026-06-18"
+    }
+  }
+}
